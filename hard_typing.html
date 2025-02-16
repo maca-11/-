@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="typing.css">
+    <title>タイピングゲーム(ハードモード)</title>
+</head>
+<body>
+    <div class="container">
+        <div id="spaceKeyPrompt" class="label">Press SpaceKey</div>
+        <div id="countdown" class="label"></div>
+        <div id="question" class="label"></div>
+        <input type="text" id="answer" class="answer" autofocus>
+        <div class="mi">
+            <div id="downTimer" class="timer">0:45</div>
+            <button id="startDown">スタート</button>
+            <button id="pauseDown">一時停止</button>
+            <button id="resumeDown" style="display:none;">再開</button>
+            <button id="topDuringPause" style="display:none;">トップへ</button>
+        </div>
+        <div id="result" class="label"></div>
+        <div id="misslabel" class="num">ミスタイプ数 : <p id="missnum" class="num">0</p></div>
+        <div class="result" id="gameResult" style="display:none;">
+            <h2>ゲーム結果</h2>
+            <p id="finalMissnum"></p>
+            <p id="elapsedTime"></p>
+            <p id="finalScore"></p>
+            <p id="finalGrade"></p>
+            <button class="button1" id="playAgain">もう一度プレイ</button>
+            <button class="button2" id="topAfterGame">トップへ</button>
+        </div>
+    </div>
+    <script src="easy.js"></script>
+</body>
+</html>
