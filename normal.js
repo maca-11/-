@@ -156,7 +156,7 @@ function handleInput() {
 
 
 let downTimerInterval;
-let downTimerSeconds = 60;
+let downTimerSeconds = 50;
 let isDownRunning = false;
 
 function startDownTimer() {
